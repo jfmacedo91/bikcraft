@@ -8,8 +8,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.25rem;
-  max-width: 75rem;
-  margin: 0 auto;
   padding: 1.25rem;
 }
 

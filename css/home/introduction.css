@@ -8,9 +8,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 2.5rem;
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .introduction-content {
@@ -29,7 +26,6 @@
 .introduction img {
   height: 100%;
   object-fit: cover;
-  border-radius: 0.25rem;
 }
 
 @media (max-width: 800px) {
