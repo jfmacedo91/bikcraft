@@ -1,0 +1,64 @@
+.testimony {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-primary01);
+  overflow: hidden;
+}
+
+.testimony img {
+  width: 100%;
+  height: 100%;
+  max-height: 42.5rem;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.testimony-content {
+  align-self: end;
+  padding: 2.5rem 2.5rem 5rem 5rem;
+}
+
+.testimony-content p {
+  position: relative;
+  margin-bottom: 2rem;
+  max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.testimony-content p::before,
+.testimony-content p::after {
+  position: absolute;
+  font-size: 5rem;
+  color: var(--color-primary02);
+}
+
+.testimony-content p::before {
+  content: "“";
+  top: -1rem;
+  left: -3rem;
+}
+
+.testimony-content p::after {
+  content: "”";
+}
+
+@media (max-width: 800px) {
+  .testimony {
+    grid-template-columns: 1fr;
+  }
+
+  .testimony img {
+    max-height: 12.5rem;
+  }
+
+  .testimony-content {
+    justify-self: center;
+    padding: 2.5rem 1.25rem;
+  }
+
+  .testimony-content p {
+    text-align: center;
+  }
+}
