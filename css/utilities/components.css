@@ -3,24 +3,34 @@
   margin: 0 auto;
   padding: 0 1.25rem;
 }
-.primary-button {
+
+.button {
   display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 0.25rem;
-  color: #332200;
-  background: linear-gradient(#FFBF00, #F2A50C);
   box-shadow: 0 1px 2px #00000019;
+  transition: 200ms;
 }
 
-.primary-button:hover {
-  background: linear-gradient(#FFB60D, #E59317);
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button.primary {
+  color: var(--color-primary05);
+  background: linear-gradient(var(--color-primary01), var(--color-primary03));
+}
+
+.button.secondary {
+  color: var(--color-gray00);
+  background: linear-gradient(var(--color-gray07), var(--color-gray08));
 }
 
 @media (max-width: 600px) {
-  .primary-button {
+  .button {
     padding: 0.75rem 1rem;
     font-size: 1rem;
   }
