@@ -7,6 +7,7 @@
 
 /* Global */
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Home */
 @import "./home/introduction.css";
