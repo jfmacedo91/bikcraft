@@ -20,3 +20,6 @@
 
 /* Secure */
 @import "./secure/secure.css";
+
+/* Terms */
+@import "./terms/terms.css";
