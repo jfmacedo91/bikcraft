@@ -16,6 +16,7 @@
 @import "./home/testimony.css";
 
 /* Bicycles */
+@import "./bicycles/bicycles.css";
 @import "./bicycles/bicycles-list.css";
 
 /* Secure */
