@@ -21,6 +21,8 @@
 
 /* Secure */
 @import "./secure/secure.css";
+@import "./secure/faq.css";
+@import "./secure/benefits.css";
 
 /* Terms */
 @import "./terms/terms.css";
