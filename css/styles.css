@@ -19,6 +19,7 @@
 @import "./bicycles/bicycles.css";
 @import "./bicycles/bicycles-list.css";
 @import "./bicycle/bicycle.css";
+@import "./bicycle/bicycle-secure.css";
 
 /* Secure */
 @import "./secure/secure.css";
