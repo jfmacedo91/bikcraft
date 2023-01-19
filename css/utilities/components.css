@@ -31,6 +31,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
+  border: none;
   border-radius: 0.25rem;
   box-shadow: 0 1px 2px #00000019;
   transition: 200ms;
