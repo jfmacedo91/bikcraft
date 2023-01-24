@@ -32,11 +32,147 @@
 }
 
 .product-budget {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-content: start;
   border-radius: 0.25rem 0 0 0.25rem;
   background-color: var(--color-gray12);
+}
+
+.product-budget > * {
+  grid-column: 1/-1;
+}
+
+.product-budget > label {
+  grid-column: initial;
+}
+
+.product-budget label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-gray10);
+  cursor: pointer;
+}
+
+.product-budget label:hover {
+  background-color: var(--color-gray09);
+}
+
+.product-budget label::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+  border: 2px solid var(--color-gray06);
+  border-radius: 50%;
+}
+
+.product-budget label span {
+  display: none;
+}
+
+.product-budget input:checked + label span {
+  display: initial;
+}
+
+
+.product-budget input:checked + label::before {
+  border-color: var(--color-gray07);
+  background-color: var(--color-gray07);
+  box-shadow: inset 0 0 0 2px var(--color-gray00);
+}
+
+.product-budget input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-budget input:checked + label {
+  color: var(--color-gray11);
+  background-color: var(--color-gray00);
+}
+
+.product-budget input:focus + label {
+  outline: 1px solid var(--color-primary01);
+  outline-offset: 2px;
+}
+
+.budget-details {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-gray00);
+}
+
+.budget-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.budget-details li + li {
+  margin-top: 0.5rem;
+}
+
+.budget-details li img {
+  width: 1rem;
+}
+
+.product-budget input:checked + label + .budget-details {
+  display: grid;
+}
+
+.budget-content {
+  display: none;
+}
+
+.budget-content h2,
+.budget-data h2:nth-of-type(n + 2) {
+  margin-top: 1.25rem;
+}
+
+#bikcraft:checked ~ #bikcraft-budget,
+#secure:checked ~ #secure-budget {
+  display: grid;
+  gap: 1.25rem;
 }
 
 .budget-data {
   border-radius: 0 0.25rem 0.25rem 0;
   background-color: var(--color-gray00);
+}
+
+@media (max-width: 1200px) {
+  .product-budget,
+  .budget-data {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .budget {
+    grid-template-columns: 1fr;
+  }
+
+  .product-budget {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+
+  .budget-data {
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .product-budget {
+    grid-template-columns: 1fr;
+  }
 }
