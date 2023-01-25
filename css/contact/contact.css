@@ -15,7 +15,7 @@
 
 .contact-data {
   border-radius: 0.25rem 0 0 0.25rem;
-  background-color: var(--color-gray12);
+  background: var(--color-gray12) url("../../img/dec/bottom-left.svg") no-repeat bottom 1.25rem left 1.25rem;
 }
 
 .contact-data h2 {
@@ -59,7 +59,7 @@
 
 .contact-form {
   border-radius: 0 0.25rem 0.25rem 0;
-  background-color: var(--color-gray00);
+  background: var(--color-gray00) url("../../img/dec/bottom-right.svg") no-repeat bottom 1.25rem right 1.25rem;
 }
 
 @media (max-width: 800px) {
@@ -74,6 +74,7 @@
 
   .contact-data {
     border-radius: 0.25rem 0.25rem 0 0;
+    background: var(--color-gray12);
   }
 
   .contact-data h2,

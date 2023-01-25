@@ -1,6 +1,6 @@
 .introduction-bg {
   color: var(--color-gray00);
-  background-color: var(--color-gray12);
+  background: var(--color-gray12) url("../../img/dec/bottom-left.svg") no-repeat bottom 10rem left 1.25rem;
   box-shadow: inset 0 -7.5rem 0 var(--color-gray00);
 }
 
