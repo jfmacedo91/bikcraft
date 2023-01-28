@@ -17,3 +17,15 @@ params.forEach(param => {
     checkbox.checked = true
   }
 })
+
+const gallery = document.querySelectorAll(".bicycle-img img")
+const galleryContainer = document.querySelector(".bicycle-img")
+
+gallery.forEach(image => {
+  image.addEventListener("click", event => {
+    const img = event.currentTarget
+    if(matchMedia("(min-width: 1000px)").matches) {
+      galleryContainer.prepend(img)
+    }
+  })
+})
