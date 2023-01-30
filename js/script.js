@@ -29,3 +29,7 @@ gallery.forEach(image => {
     }
   })
 })
+
+if(window.SimpleAnime) {
+  new SimpleAnime()
+}
